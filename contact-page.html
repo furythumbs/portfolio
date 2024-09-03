@@ -1,0 +1,358 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zahier Claronino|Portfolio/Contact</title>
+<style>
+	body {
+		margin:0;
+	}
+	.top-banner {
+		background-color:black;
+		color:white;
+		text-align:center;
+		height:170px;
+		display: flex;
+        align-items: center;
+        justify-content:left;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+
+	.socials {
+		margin-left:500px;
+		display: flex;
+		flex-direction: row;
+	}
+	.socials button[name="instagram"] {
+		background-image:url(insta-logo.jpeg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+	}
+	.socials button[name="facebook"] {
+		background-image:url(facebook-logo.png);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:contain;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+		max-width:100%;
+		height:auto;
+		diplay:flex;
+		background-color:black;
+	}
+	.socials button[name="facebook"]:hover,
+	.socials button[name="instagram"]:hover {
+		width:85px;
+		height:85px;
+		box-shadow:3px 3px 3px silver;
+		border-radius:10px;
+		transition: all 0.5s ease;
+		background-color:black
+	}
+	.button-nav {
+		background-color:black;
+		height:50px;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		position:fixed;
+		width:100%;
+		z-index: 1000;
+		
+
+	}
+	.buttons button[name="contact"] a{
+		font-size:20px;
+		background-color:silver;
+		border:none;
+		color:black;
+		border-raduis:10px;
+		box-shadow:2px 2px 2px silver;
+	}
+	.buttons button[name="projects"],
+	.buttons button[name="skills"],
+	.buttons button[name="home"] {
+		font-size:20px;
+		background-color:black;
+		border:1px solid white;
+		color:white;
+		transition: all 0.5s ease;
+		box-shadow:3px 3px 3px  white;
+		border-radius:5px;
+
+	
+	}
+	
+	
+	.buttons button[name="home"]:hover,
+	.buttons button[name="skills"]:hover,
+	.buttons button[name="projects"]:hover,
+	.buttons button[name="contact"]:hover {
+		color:silver;
+		background-color:maroon;
+		font-size:25px;
+		transition: all 0.5s ease;
+		font-family: 'papyrus' , fantasy;
+		border-radius: 5px;
+		box-shadow:5px 5px 5px maroon;
+		
+
+		
+	}
+	.buttons button[name="home"]:hover {
+		border-radius:10px;
+	}
+	
+	.heading {
+		text-align:center;
+		font-size:30px;
+		font-family: 'Papyrus' , fantasy;
+		background-color:#333;
+		color:F6F5EE;
+		margin-top:50px;
+		
+	}
+	
+	h2 {
+		text-shadow:3px 3px 3px silver;
+	}
+
+	.main {
+		display:flex;
+		width:100%;
+		height:100vh;
+		background-color:white;
+	}
+	
+	.middle-panel {
+		width:50%;
+		height:97vh;
+		box-shadow:7px 7px 7px black;
+		background-color:white;
+	}
+	.left-panel,
+	.right-panel {
+		width:25%;
+		height:97vh;
+	}
+
+	h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:30px;
+		text-shadow:3px 3px 3px silver;
+		color:black;
+		text-align:center;
+	}
+	.form-container {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.form-group {
+		margin-bottom: 15px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 8px;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+
+	button {
+		background-color: #4caf50;
+		color: white;
+		padding: 10px 15px;
+		border: none;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: black;
+		color:F6F5EE;
+	}
+	
+	p {
+		text-align:center;
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:20px;
+		color:#000000;
+	}
+	.information img {
+	    max-width: 100%;
+		height: auto;
+		margin-bottom: 10px;
+	}
+	.information {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		font-family: Comic Sans MS, Comic Sans, cursive;
+		font-size: 20px;
+		color: #000000;
+	}
+	.left-panel img, 
+	.right-panel img {
+		margin-top:120px;
+	}
+	
+	.footer {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		position: relative;
+		margin-bottom: 0;
+		width: 100%;
+		height:100px;
+        
+	}
+	
+	.footer p {
+		color:white;
+		text-align: center; 
+		line-height: 100px; 
+		margin: 0; 
+		height: 100%; 
+		display: flex;
+		align-items: center; 
+		justify-content: center; 
+	}
+	@media only screen and (max-width: 1520px) {
+		.socials {
+			margin-left:0;
+		}
+	}
+	@media only screen and (max-width:1100px) {
+		.left-panel img,
+		.right-panel img {
+			width:150px;
+			margin-left:-5;
+		}
+	}
+	
+	@media only screen and (max-width:700px) {
+		.information {
+			margin-top:-50px;
+		}
+	}
+	
+	@media only screen and (max-width:560px) {
+		.information p{
+			font-size:15px;
+		}
+	}
+	
+	@media only screen and (max-width:560px) {
+		.footer p {
+			font-size:16px;
+		}
+	}
+	
+	a {
+		color:white;
+		text-decoration:none;
+	}
+	
+	
+</style>
+	<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Your code for navigation
+			window.addEventListener("scroll", function () {
+				var nav = document.querySelector(".button-nav");
+				var topBannerHeight = document.querySelector(".top-banner").clientHeight;
+
+				if (window.scrollY > topBannerHeight) {
+					nav.style.position = "fixed";
+					nav.style.top = "0";
+				} else {
+					nav.style.position = "relative";
+					nav.style.top = "0"; 
+				}
+			});
+
+		});
+    </script>
+	<div class="top-banner">
+	<img src="logo.png" width="190px" height="170px">
+	<h1>Zahier Claronino's Portfolio</h1>
+		<div class ="socials" name="social">
+			<button type="button" name="instagram"></button>
+			<button type="button" name="facebook"></button>
+		
+		</div>
+	</div>
+	<div class="button-nav" name="nav">
+		<div class="buttons">
+			<button type="button" name="home"><a href="index.html"><b><strong><em> Home  </a></em></strong></b></button>
+			<button type="button" name="projects"><a href="projects.html"> Projects  </a></button>
+			<button type="button" name="skills"><a href="skills-page.html">  Skills  </a></button>
+			<button type="button" name="contact"><a href="contact-page.html">  Contact  </a></button>
+		</div>
+	</div>
+</head>
+	<div class="heading">
+		<h2>Contact Me</h2>
+	</div>
+
+<body>
+	<div class="main">
+		<div class="left-panel">
+			<img src="Rick_Sanchez.png" width="300px" height="450px" >
+		</div>
+		<div class="middle-panel">
+			<h3><em>Send me an Enquiry</em></h3>
+			<div class="form-container">
+				<form action="mailto:zahierclaronino50@gmail.com" method="POST" />
+					<div class="form-group">
+						<label for="name">Your Name:</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Your Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+
+					<button type="submit">Submit</button>
+				</form>
+			</div><br>
+			<div class="information">
+				<p>061 150 1442</p><img src="phone.jpg" width="70px" height="70px">
+				<p>zahierclaronino50@gmail.com</p><img src="email.jpg" width="70px" height="70px">
+			</div>		
+		</div>
+
+		<div class="right-panel">
+			<img src="morty.png" width="300px" height="450px">
+		</div>
+	</div>
+
+
+</body>
+	<div class="footer">
+        <p> 2023 Zahier Claronino's Portfolio|All rights reserved.<sup>&#x2122;</sup></p>
+    </div>
+
+</html>

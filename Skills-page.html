@@ -1,0 +1,317 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Zahier Claronino|Portfolio/Skills</title>
+<style>
+
+	body {
+		margin:0;
+	}
+	.top-banner {
+		background-color:black;
+		color:white;
+		text-align:center;
+		height:170px;
+		display: flex;
+        align-items: center;
+        justify-content:left;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	h1 {
+		text-shadow:2px 2px 2px white;
+	}
+	@media only screen and (max-width: 768px) {
+		.socials {
+			margin-left: 0;
+		}
+	}
+	.socials {
+		margin-left:500px;
+	}
+	.socials button[name="instagram"] {
+		background-image:url(insta-logo.jpeg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+	}
+	.socials button[name="facebook"] {
+		background-image:url(facebook-logo.png);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+	}
+	.socials button[name="facebook"]:hover,
+	.socials button[name="instagram"]:hover {
+		width:85px;
+		height:85px;
+		box-shadow:3px 3px 3px silver;
+		border-radius:10px;
+		transition: all 0.5s ease;
+	}
+	.button-nav {
+		background-color:black;
+		height:50px;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		position:fixed;
+		width:100%;
+		z-index: 1000;
+		
+
+	}
+	.buttons button[name="skills"] a {
+		font-size:20px;
+		background-color:silver;
+		border:none;
+		color:black;
+		box-shadow:3px 3px 3px white;
+	}
+	.buttons button[name="home"],
+	.buttons button[name="projects"],
+	.buttons button[name="contact"] {
+		font-size:20px;
+		background-color:black;
+		border:1px solid white;
+		color:white;
+		transition: all 0.5s ease;
+		box-shadow:3px 3px 3px  white;
+		border-radius:5px;
+
+	
+	}
+	
+	
+	.buttons button[name="home"]:hover,
+	.buttons button[name="skills"]:hover,
+	.buttons button[name="projects"]:hover,
+	.buttons button[name="contact"]:hover {
+		color:silver;
+		background-color:maroon;
+		font-size:25px;
+		transition: all 0.5s ease;
+		font-family: 'papyrus' , fantasy;
+		border-radius: 5px;
+		box-shadow:5px 5px 5px maroon;
+		
+
+		
+	}
+	
+	.heading {
+		text-align:center;
+		font-size:30px;
+		font-family: 'Papyrus' , fantasy;
+		background-color:#333;
+		color:F6F5EE;
+		margin-top:-5px;
+	}
+	h2 {
+		text-shadow:3px 3px 3px black;
+	}
+	
+	.main {
+		display:flex;
+		width:100%;
+		height:100vh;
+		background-color:white;
+	}
+	
+	.middle-panel {
+		width:60%;
+		height:97vh;
+		box-shadow:7px 7px 7px black;
+		background-image:url(skills.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+	}
+	.left-panel,
+	.right-panel {
+		width:20%;
+		height:97vh;
+	}
+	
+	h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:30px;
+		text-shadow:3px 3px 3px #333;
+		color:white;
+	}
+	
+	p1 {
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:22px;
+		color:white;
+		text-shadow:2px 2px 2px white;
+		opacity:1;
+	}
+	
+	p2 {
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:30px;
+		color:black;
+		text-shadow:2px 2px 2px white;
+		opacity:1;
+	}
+	
+	p3 {
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:28px;
+		color:blue;
+		text-shadow:2px 2px 2px white;
+		opacity:1;
+	}
+	
+	.left-panel {
+		margin-top:100px;
+	}
+	
+	.footer {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		position: relative;
+		margin-bottom: 0;
+		width: 100%;
+		height:100px;
+        
+	}
+	
+	.footer p {
+		/* Your styles here */
+		text-align: center; /* Center text horizontally */
+		line-height: 100px; /* Adjust line height for vertical centering */
+		margin: 0; /* Remove default margin to ensure full width */
+		height: 100%; /* Make sure the paragraph takes the full height of the footer */
+		display: flex;
+		align-items: center; /* Center text vertically */
+		justify-content: center; /* Center text horizontally */
+	}
+	
+	@media screen and (max-width:1100px) {
+		.left-panel img {
+			margin-left:-70px;
+		}
+	}
+	
+	@media screen and (max-width:800px) {
+		.left-panel img {
+			width:150px;
+			margin-left:-10px;
+		}
+	}
+	
+	@media screen and (max-width:800px) {
+		.middle-panel p1 {
+			font-size:16px;
+		}
+	}
+	
+	@media screen and (max-width:800px) {
+		.middle-panel p2 {
+			font-size:20px;
+		}
+	}
+	@media screen and (max-width:1350px) {
+		.middle-panel p3 {
+			font-size:23px;
+		}
+	}
+	@media screen and (max-width:500px) {
+		.middle-panel p1 {
+			font-size:12px;
+		}
+	}
+
+	@media screen and (max-width:500px) {
+		.middle-panel p2 {
+			font-size:15px;
+		}
+	}
+	
+	@media screen and (max-width:900px) {
+		.middle-panel p3 {
+			font-size:18px;
+		}
+	}
+	a {
+		color:white;
+		text-decoration:none;
+	}
+</style>
+	<div class="top-banner">
+		<img src="logo.png" width="190px" height="170px">
+		<h1>Zahier Claronino's Portfolio</h1>
+			<div class ="socials" name="social">
+				<button type="button" name="instagram"></button>
+				<button type="button" name="facebook"></button>
+			
+		</div>
+	</div>
+	<div class="button-nav" name="nav">
+		<div class="buttons">
+			<button type="button" name="home"><a href="index.html"><b><strong><em> Home  </a></em></strong></b></button>
+			<button type="button" name="projects"><a href="projects.html"> Projects  </a></button>
+			<button type="button" name="skills"><a href="skills-page.html">  Skills  </a></button>
+			<button type="button" name="contact"><a href="contact-page.html">  Contact  </a></button>
+		</div>
+	</div><br>
+	<script>
+			window.addEventListener("scroll", function () {
+			var nav = document.querySelector(".button-nav");
+			var topBannerHeight = document.querySelector(".top-banner").clientHeight;
+
+			if (window.scrollY > topBannerHeight) {
+				nav.style.position = "fixed";
+				nav.style.top = "0";
+			} else {
+				nav.style.position = "relative";
+				nav.style.top = "0"; /* Set the initial top value when not fixed */
+			}
+		});
+
+	</script>
+</head>
+	<div class="heading">
+		<h2>Skills</h2>
+	</div>
+<body>
+
+	<div class="main">
+		<div class="left-panel">
+			<img src="morty.png" width="300px" height="450px" >
+		</div>
+		<div class="middle-panel">
+				<h3><em>Proficient In:</em></h3>
+				<p1>-HTML (Hypertext Markup Language)<br><br>
+				-CSS (Cascading Style Sheets)<br><br>
+				-JS (JavaScript)<br><br>
+				-Python</p1><br><br><br><br>
+				
+				<p2>Proficient In Front-End Development</p2><br><br>
+				
+				<p3> I have a strong foundation in HTML, CSS, and JavaScript. With hands-on experience in creating responsive and visually appealing web interfaces, I am well-versed in modern web development practices. My portfolio showcases projects where I have applied my skills to enhance user experiences and create engaging digital solutions.</p3>
+					
+		</div>
+		
+		<div class="right-panel">
+				
+			</div>
+	</div>
+</body>
+	<div class="footer">
+        <p> 2023 Zahier Claronino's Portfolio|All rights reserved.<sup>&#x2122;</sup></p>
+    </div>
+</html>

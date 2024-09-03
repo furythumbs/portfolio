@@ -1,0 +1,416 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<title>Zahier Claronino|Portfolio/projects</title>
+<style>
+	body {
+		margin:0;
+	}
+	.top-banner {
+		background-color:black;
+		color:white;
+		text-align:center;
+		height:170px;
+		display: flex;
+        align-items: center;
+        justify-content:left;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	h1 {
+		text-shadow:2px 2px 2px white;
+	}
+	
+		.socials {
+		margin-left:500px;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.socials {
+			margin-left: 0;
+		}
+	}
+	.socials button[name="instagram"] {
+		background-image:url(insta-logo.jpeg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+	}
+	.socials button[name="facebook"] {
+		background-image:url(facebook-logo.png);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+	}
+	.socials button[name="facebook"]:hover,
+	.socials button[name="instagram"]:hover {
+		width:85px;
+		height:85px;
+		box-shadow:3px 3px 3px silver;
+		border-radius:10px;
+		transition: all 0.5s ease;
+	}
+	.button-nav {
+		background-color:black;
+		height:50px;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		position:fixed;
+		width:100%;
+		z-index: 1000;
+		
+
+	}
+	.buttons button[name="projects"] a {
+		font-size:20px;
+		background-color:silver;
+		border:none;
+		color:black;
+		box-shadow:3px 3px 3px white;
+	}
+	.buttons button[name="home"],
+	.buttons button[name="skills"],
+	.buttons button[name="contact"] {
+		font-size:20px;
+		background-color:black;
+		border:1px solid white;
+		color:white;
+		transition: all 0.5s ease;
+		box-shadow:3px 3px 3px  white;
+		border-radius:5px;
+
+	
+	}
+	
+	
+	.buttons button[name="home"]:hover,
+	.buttons button[name="skills"]:hover,
+	.buttons button[name="projects"]:hover,
+	.buttons button[name="contact"]:hover {
+		color:silver;
+		background-color:maroon;
+		font-size:25px;
+		transition: all 0.5s ease;
+		font-family: 'papyrus' , fantasy;
+		border-radius: 5px;
+		box-shadow:5px 5px 5px maroon;
+		
+
+		
+	}
+	
+	.heading {
+		text-align:center;
+		font-size:30px;
+		font-family: 'Papyrus' , fantasy;
+		background-color:#333;
+		color:F6F5EE;
+		margin-top:40px;
+		
+	}
+	h2 {
+		text-shadow:3px 3px 3px black;
+	}
+	.project1 {
+		background-image:url(web-dev.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-color:black;
+		border:1px solid black;
+		width:500px;
+		height:600px;
+		margin-left:50px;
+		border-radius:10px;
+		box-shadow:5px 5px 5px 5px black;
+	}
+	h3 {
+		text-align:center;
+		font-size:30px;
+		font-family: Arial, Helvetica, sans-serif;
+		color:#FBFFFF ;
+	}
+	
+	p1 {
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:16px;
+		color:white;
+	}
+	
+	
+	.project1 .more-info-btn {
+		background-color: transparent;
+		border: none;
+		font-size: 25px;
+		cursor: pointer;
+		margin-left: 470px;
+		color: white;
+		margin-top:-65px
+	}
+
+	.project1 .default-info {
+		display: block;
+	}
+
+	.project1 .alternate-info {
+		display: none;
+	}
+	
+	h4 {
+		text-align:center;
+		font-size:30px;
+		font-family: Arial, Helvetica, sans-serif;
+		color:#FBFFFF ;
+	}
+	
+	p2 {
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:20px;
+		color:white;
+	}
+		
+	.project2 {
+		background-color:black;
+		border:1px solid black;
+		width:500px;
+		height:600px;
+		margin-left:800px;
+		border-radius:10px;
+		box-shadow:5px 5px 5px 5px black;
+		margin-top:-585px;
+		background-image:url(web-dev.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+	}
+	
+	h5 {
+		text-align:center;
+		font-size:30px;
+		font-family: Arial, Helvetica, sans-serif;
+		color:#FBFFFF ;
+	}
+	
+	p3 {
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:16px;
+		color:white;
+	}
+	
+	h6 {
+		font-size:40px;
+		color:#333;
+		font-family: 'Papyrus' , fantasy;
+		text-shadow: 5px 5px 5px black;
+	}
+	
+	p4 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:30px;
+		text-shadow:3px 3px 3px #333;
+	}
+	p5 {
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		font-size:20px;
+		color:#000000;
+	}
+	.education-experience {
+		background-image:url(education.jpg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:380px 380px;
+		
+		
+	}
+	.image img {
+		margin-left:800px;
+		margin-top:-400px;
+		border-radius:20px;
+		max-width: 100%;
+		height: auto;
+
+	}
+	
+	.footer {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		position: relative;
+		margin-bottom: 0;
+		width: 100%;
+		height:100px;
+		margin-top:500px;
+        
+	}
+	
+	.footer p {
+		/* Your styles here */
+		text-align: center; /* Center text horizontally */
+		line-height: 100px; /* Adjust line height for vertical centering */
+		margin: 0; /* Remove default margin to ensure full width */
+		height: 100%; /* Make sure the paragraph takes the full height of the footer */
+		display: flex;
+		align-items: center; /* Center text vertically */
+		justify-content: center; /* Center text horizontally */
+	}
+	
+	@media screen and (max-width: 1300px) {
+	   .all-projects {
+		display: flex;
+		flex-direction: column;
+		}
+
+	   .project1,
+	   .project2,
+	   .education-experience,
+	   .image {
+			width: 100%;
+			margin-left: 0;
+		}
+
+	   .project2 {
+			margin-top: 0px; /* Adjust the margin-top for proper spacing */
+		}
+		.footer {
+			top:700px;
+		}
+	}
+	
+	@media screen and(max-width:1200px) {
+		.footer {
+			margin-top:0;
+		}
+	}
+	
+	a {
+		color:white;
+		text-decoration:none;
+	}
+</style>
+	<script>
+        window.addEventListener("scroll", function () {
+            var nav = document.querySelector(".button-nav");
+            var topBannerHeight = document.querySelector(".top-banner").clientHeight;
+
+            if (window.scrollY > topBannerHeight) {
+                nav.style.position = "fixed";
+                nav.style.top = "0";
+            } else {
+                nav.style.position = "relative";
+                nav.style.top = "0"; /* Set the initial top value when not fixed */
+            }
+        });
+    </script>
+	<div class="top-banner">
+	<img src="logo.png" width="190px" height="170px">
+	<h1>Zahier Claronino's Portfolio</h1>
+		<div class ="socials" name="social">
+			<button type="button" name="instagram"></button>
+			<button type="button" name="facebook"></button>
+		
+		</div>
+	</div>
+	<div class="button-nav" name="nav">
+		<div class="buttons">
+			<button type="button" name="home"><a href="index.html"><b><strong><em> Home  </a></em></strong></b></button>
+			<button type="button" name="projects"><a href="projects.html"> Projects  </a></button>
+			<button type="button" name="skills"><a href="skills-page.html">  Skills  </a></button>
+			<button type="button" name="contact"><a href="contact-page.html">  Contact  </a></button>
+		</div>
+	</div>
+	<div class="heading">
+		<h2>Projects and Background</h2>
+	</div>
+</head>
+
+
+
+<body>
+
+	<div class="all-projects">
+		<div class="project1">
+			<h3>CTU-Buddy</h3><button class="more-info-btn" onclick="toggleInfo()"><b>&#8942;</b></button>
+			<div class="default-info">
+				<video width="500" height="400" controls>
+						<source src="CTU_Buddy_intro_vid.mp4" type="video/mp4">
+				</video>
+				<p1>the ultimate destination for seamless digital learning experiences. At CTU-Buddy, we revolutionize education by bringing the campus to your fingertips, making learning accessible, interactive, and tailored to your needs.</p1>
+			</div>
+			<div class="alternate-info">
+				<h4>Technologies/Languages Used</h4><br><br>
+				<p2>-HTML<br><br>
+				-CSS(Cascading Style Sheets)<br><br>
+				-JS(JavaScript)<br><br>
+				-Notepad++<br><br>
+				-Role:UI and UX Design</p2>
+			</div>
+		<div class="project2">
+			<h5>Web Dev Blog</h5><br><br>
+			<img src="blog.png" width="100%" height="300px">
+			
+			<p3>This is an unfinished project. Its a Web blog that im working on alone focused on helping beginners with most basic structure of web development. Topics include HTML,CSS, AND JAVASCRIPT</p3>
+		</div>
+		<div class="education-experience">
+			<h6>Education and experience</h6>
+			<p4><em>School</em></p4><br>
+			<p5>Oude Molen Acadamy of Science and Technology</p5><br><br>
+			<p4><em>Tertiary Studies</em></p4><br>
+			<p5>College of Cape Town (NQF4 electrical engineering)</p5><br><br>
+			<p5>CTU Training solutions (Programming Foundation/software development including web development)</p5>
+			
+		</div>
+		<div class="image">
+			<img src="random.png" width="400px" height="400px">
+		</div>
+	</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var projectVideo = document.querySelector(".project1 video");
+
+    projectVideo.addEventListener("mouseover", function () {
+      projectVideo.play();
+      projectVideo.loop = true; // Add this line if you want the video to loop
+      projectVideo.muted = true; // Add this line if you want the video to be muted
+    });
+
+    projectVideo.addEventListener("mouseout", function () {
+      projectVideo.pause();
+      projectVideo.currentTime = 0; // Reset the video to the beginning
+    });
+  });
+  function toggleInfo() {
+    var defaultInfo = document.querySelector('.project1 .default-info');
+    var alternateInfo = document.querySelector('.project1 .alternate-info');
+	var project2 = document.querySelector('.project2');
+    if (defaultInfo.style.display === 'block') {
+        defaultInfo.style.display = 'none';
+        alternateInfo.style.display = 'block';
+		project2.style.marginTop = '-500px';
+    } else {
+        defaultInfo.style.display = 'block';
+        alternateInfo.style.display = 'none';
+		project2.style.marginTop = '-585px';
+    }
+}
+</script>
+</body>
+	<div class="footer">
+        <p> 2023 Zahier Claronino's Portfolio|All rights reserved.<sup>&#x2122;</sup></p>
+    </div>
+
+
+</html>
