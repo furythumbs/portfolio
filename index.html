@@ -1,0 +1,425 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Zahier Claronino|Portfolio/Home</title>
+<style>
+	body {
+		margin:0;
+	}
+	.top-banner {
+		background-color:black;
+		color:white;
+		text-align:center;
+		height:170px;
+		display: flex;
+        align-items: center;
+        justify-content:left;
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	@media only screen and (max-width: 768px) {
+		.socials {
+			margin-left: 0;
+		}
+	}
+	.socials {
+		margin-left:500px;
+	}
+	.socials button[name="instagram"] {
+		background-image:url(insta-logo.jpeg);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+	}
+	.socials button[name="facebook"] {
+		background-image:url(facebook-logo.png);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		width:60px;
+		height:60px;
+		border:none;
+		transition: all 0.3s ease;
+	}
+	.socials button[name="facebook"]:hover,
+	.socials button[name="instagram"]:hover {
+		width:85px;
+		height:85px;
+		box-shadow:3px 3px 3px silver;
+		border-radius:10px;
+		transition: all 0.5s ease;
+	}
+	.button-nav {
+		background-color:black;
+		height:50px;
+		display: flex;
+		align-items: center;
+		justify-content:center;
+		position:fixed;
+		width:100%;
+		z-index: 1000;
+		
+
+	}
+	.buttons button[name="home"] a{
+		font-size:20px;
+		background-color:silver;
+		border:none;
+		color:black;
+	}
+	.buttons button[name="projects"],
+	.buttons button[name="skills"],
+	.buttons button[name="contact"] {
+		font-size:20px;
+		background-color:black;
+		border:1px solid white;
+		color:white;
+		transition: all 0.5s ease;
+		box-shadow:3px 3px 3px  white;
+		border-radius:5px;
+
+	
+	}
+	
+	
+	.buttons button[name="home"]:hover,
+	.buttons button[name="skills"]:hover,
+	.buttons button[name="projects"]:hover,
+	.buttons button[name="contact"]:hover {
+		color:silver;
+		background-color:maroon;
+		font-size:25px;
+		transition: all 0.5s ease;
+		font-family: 'papyrus' , fantasy;
+		border-radius: 5px;
+		box-shadow:5px 5px 5px maroon;
+		
+
+		
+	}
+		.buttons button[name="home"]:hover {
+			border-radius:10px;
+	}
+	.main {
+		display:flex;
+		width:100%;
+		height:100vh;
+		background-color:white;
+	}
+		.left-panel,
+		.middle-panel,
+		.right-panel {
+			width:33.23%;
+			height:97vh;
+	}
+	
+	h1 {
+		text-shadow:2px 2px 2px white;
+	}
+	h3 {
+		font-size:50px;
+		color:F6F5EE;
+		font-family: 'Papyrus' , fantasy;
+		margin-left:425px;
+		position: relative; /* Set position to relative */
+		z-index: 2; /* Set a higher z-index value */
+		background-color:black;
+		text-shadow: 5px 5px 5px white;
+	}
+	p {
+		color:white;
+		margin-top:230px;
+		font-size:18px;
+		font-family:Comic Sans MS, Comic Sans, cursive;
+	}
+	h4 {
+		font-size:35px;
+		font-family:"MV Boli", Times, serif;
+		color:#000080;
+		margin-left:170px;
+		text-shadow: 2px 2px 2px #000080;
+		animation:flip 2s 1;
+		animation-delay:4s;
+
+
+
+		
+	}
+
+	@keyframes flip {
+		0% {
+			transform: scaleX(1);
+		}
+		50% {
+			transform: scaleX(0);
+		}
+		100% {
+			transform: scaleX(1);
+		}
+	}
+	
+	h5 {
+		font-size:30px;
+		margin-left:70px;
+		font-family: 'papyrus' , fantasy;
+		text-shadow:2px 2px 2px black;
+	}
+	
+	.paragraph {
+		margin-left:70px;
+		font-size:18px;
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		color:black;
+	}
+	h6 {
+		font-size:30px;
+		color:white;
+		margin-top:300px;
+		margin-left:150px;
+		font-family: 'papyrus' , fantasy;
+		text-shadow:2px 2px 2px white;
+	
+	}
+	
+	.paragraph1 {
+		background-color:blue;
+		margin-top:-40px;
+		font-size:18px;
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		color:white;
+		height:400px;
+		
+		
+	}
+	
+	.p2 {
+		margin-left:70px;
+		
+	}
+	.journey {
+		
+		background-color:silver;
+		margin-top:80px;
+	}
+	
+	h7 {
+		font-size:30px;
+		margin-left:120px;
+		font-family: 'papyrus' , fantasy;
+		text-shadow:2px 2px 2px black;
+	}
+	.paragraph3 {
+		margin-top:170px;
+		background-color:silver;
+		
+	}
+	.p3 {
+		font-size:18px;
+		font-family:Comic Sans MS, Comic Sans, cursive;
+		color:black;
+		height:320px;
+		margin-left:50px;
+		margin-top:100px;
+	}
+	
+	.right-panel img {
+		margin-left:-150px;
+		margin-top:75px;
+		max-width: 100%;
+		height: auto;
+
+	}
+	.left-panel {
+		background-color:white;
+		background-image:url(rickandmorty.png);
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:400px 400px;
+	}
+	
+	.middle-panel {
+		background-color:black;
+		
+	}
+	
+	.right-panel {
+		background-color:white;
+	}
+	
+	.right-panel img {
+		border-radius:10px;
+		max-width: 100%;
+		height: auto;
+
+	}
+	
+	.footer {
+		background-color: #333;
+		color: white;
+		text-align: center;
+		position: relative;
+		margin-bottom: 0;
+		width: 100%;
+		height:100px;
+		margin-top:300px;
+        
+	}
+	
+	.footer p {
+		/* Your styles here */
+		text-align: center; /* Center text horizontally */
+		line-height: 100px; /* Adjust line height for vertical centering */
+		margin: 0; /* Remove default margin to ensure full width */
+		height: 100%; /* Make sure the paragraph takes the full height of the footer */
+		display: flex;
+		align-items: center; /* Center text vertically */
+		justify-content: center; /* Center text horizontally */
+	}
+	@media screen and (max-width: 1200px) {
+		.footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+	
+	@media screen and (max-width: 1200px) {
+		.main {
+			flex-direction: column;
+			height: auto;
+			float:left;
+		}
+
+		.left-panel,
+		.middle-panel,
+		.right-panel {
+			width: 100%;
+		}
+		.middle-panel {
+			margin-top:500px;
+		}
+		.right-panel img {
+			margin-left:400px;
+		}
+			
+	}
+	@media screen and (max-width: 780px) {
+		.right-panel img {
+			margin-left:-20px;
+		}
+	}
+	a {
+		color:white;
+		text-decoration:none;
+	}
+	
+</style>
+	    <script>
+        window.addEventListener("scroll", function () {
+            var nav = document.querySelector(".button-nav");
+            var topBannerHeight = document.querySelector(".top-banner").clientHeight;
+
+            if (window.scrollY > topBannerHeight) {
+                nav.style.position = "fixed";
+                nav.style.top = "0";
+            } else {
+                nav.style.position = "relative";
+                nav.style.top = "0"; 
+            }
+        });
+    </script>
+	<div class="top-banner">
+	<img src="logo.png" width="190px" height="170px">
+	<h1>Zahier Claronino's Portfolio</h1>
+		<div class ="socials" name="social">
+			<button type="button" name="instagram"></button>
+			<button type="button" name="facebook"></button>
+		
+		</div>
+	</div>
+	<div class="button-nav" name="nav">
+		<div class="buttons">
+			<button type="button" name="home"><a href="Home_page.html"><b><strong><em> Home  </a></em></strong></b></button>
+			<button type="button" name="projects"><a href="projects.html"> Projects  </a></button>
+			<button type="button" name="skills"><a href="skills-page.html">  Skills  </a></button>
+			<button type="button" name="contact"><a href="contact-page.html">  Contact  </a></button>
+		</div>
+	</div>
+</head>
+
+<body>
+	<div class="main" >
+		
+		<div class="left-panel">
+			<h3>About Me</h3>
+			<h4>Web Development<br>Web Design<br><br>
+			Front-End Developer</h4>
+			<div class="journey">
+					<br><br>
+				<h5>My Journey into Web Development</h5>
+				<div class="paragraph">
+					<p1>My journey into the realm of web development<br>
+					began with a profound interest in <br>
+					solving problems, technology and <br>
+					the way it worked always fascinated me. <br>
+					ever since the internet became what it <br>
+					is today that interest and curiosity was<br>
+					directed into the world of web development<br>
+					and software development. I am currently <br>
+					engaged in a comprehensive study program <br>
+					where I'm actively learning and applying <br>
+					my knowledge to real-world projects.</p1>
+				</div>
+			</div>
+		</div>
+		<div class="middle-panel">
+				<p>Greetings! I'm Zahier Claronino, <br>
+				a passionate individual <br>
+				currently immersed in the exciting<br>
+				world of web development.<br>
+				While I'm in the process of honing my <br>
+				skills and expanding my knowledge,<br>
+				my enthusiasm for crafting <br>
+				digital experiences knows no bounds.</p>
+				
+				<div class="paragraph1">
+				    <h6>What Drives Me</h6>
+					<div class="p2">
+						<p2>Driven by a curiosity to understand the <br>
+						intricacies of the web, I am constantly seeking <br>
+						opportunities to enhance my skills and contribute <br>
+						to the evolving landscape of web development. <br>
+						I firmly believe in the transformative power<br>
+						of technology and its ability to shape the <br>
+						way we interact with the digital world.</p2>
+					</div>
+				</div>
+		</div>
+		
+		<div class="right-panel">
+			<img src="me.jpg" width="370px" height="400px" >
+			<div class="paragraph3">
+			<br><br>
+				<h7>Skills in the Making</h7>
+				<div class="p3">
+					<p3>While I am still on the learning curve, I am <br>
+					gaining proficiency in HTML, CSS and JavaScript.<br>
+					My goal is to not only become proficient in these<br>
+					technologies but also to leverage them creatively<br>
+					to build impactful web solutions.</p3>
+				</div>
+			</div>
+			
+		</div>
+	</div><br><br><br><br><br>
+
+</body>
+	<div class="footer">
+        <p> 2023 Zahier Claronino's Portfolio|All rights reserved.<sup>&#x2122;</sup></p>
+    </div>
+</html>
